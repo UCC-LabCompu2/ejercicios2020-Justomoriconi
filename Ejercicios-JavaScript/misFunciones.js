@@ -1,13 +1,10 @@
 /**
- * Created by Agus on 6/5/2017.
- */
-
-/**
+ * Conversion de unidas de metros, yardas, pies y pulgadas.
  * Descripción
- * @method Nombre de la función
- * @param Parámetro A
- * @param Parámetro B
- * @return Valor que retorna
+ * @method cambiarunidades
+ * @param (string) id - El id de los inputs de metros, yardas, pies y pulgadas.
+ * @param {number} valor - El valor de los inputs de metros, yardas, pies y pulgadas.
+ * @return
  */
 function cambiarunidades(id, valor) {
     if(isNaN(valor)){
