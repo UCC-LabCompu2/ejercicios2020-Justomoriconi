@@ -92,3 +92,20 @@ function divicion(){
     }
 
 }
+function cargarweb() {
+    var cantidad, unidad, url;
+    cantidad=document.getElementById("distancia").value;
+    unidad=document.getElementsByName("unidades")[0].value;
+    url="segundaWeb.html#"+cantidad+"#"+unidad;
+    window.open(url);
+
+}
+function resultado() {
+    var url, unidad, cantidad;
+    url=window.location.href.split("/")[5];
+    cantidad=url.split("#")[1];
+    unidad=url.split("#")[2];
+    document.getElementById("dist").value=cantidad+" "+unidad;
+
+
+}
