@@ -109,3 +109,17 @@ function resultado() {
 
 
 }
+function dibujarcc() {
+    var canvas=document.getElementById("myCanvas");
+    var contexto=canvas.getContext("2d");
+    var ymax=canvas.height;
+    var margen=5;
+    var xmax= canvas.width;
+    contexto.fillStyle="#49ff04";
+    contexto.fillRect(0+margen,ymax-40-margen,40, 40)
+    contexto.arc(xmax/2,ymax/2, 20,0,2*Math.PI);
+    contexto.stroke();
+    contexto.fillStyle="#d800ff";
+    contexto.fill();
+
+}
