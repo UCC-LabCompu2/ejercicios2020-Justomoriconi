@@ -67,19 +67,19 @@ function suma() {
     var a,b;
     a=document.getElementsByName("sum_num1") [0].value;
     b=document.getElementsByName("sum_num2") [0].value;
-    document.getElementsByName("sum_total") [0].value= Number(a) + Number(b);
+    document.getElementsByName("sum_total") [0].innerHTML= Number(a) + Number(b);
 }
 function resta() {
     var a,b;
     a=document.getElementsByName("res_num1") [0].value;
     b=document.getElementsByName("res_num2") [0].value;
-    document.getElementsByName("res_total") [0].value= Number(a) - Number(b);
+    document.getElementsByName("res_total") [0].innerHTML= Number(a) - Number(b);
 }
 function multiplicacion() {
     var a,b;
     a=document.getElementsByName("mul_num1") [0].value;
     b=document.getElementsByName("mul_num2") [0].value;
-    document.getElementsByName("mul_total") [0].value= Number(a) * Number(b);
+    document.getElementsByName("mul_total") [0].innerHTML= Number(a) * Number(b);
 }
 function divicion(){
     var a,b;
@@ -88,7 +88,7 @@ function divicion(){
     if(b==0){
         alert("No se puede dividir por cero");
     }else {
-        document.getElementsByName("div_total") [0].value= Number(a) / Number(b);
+        document.getElementsByName("div_total") [0].innerHTML= Number(a) / Number(b);
     }
 
 }
