@@ -123,3 +123,27 @@ function dibujarcc() {
     contexto.fill();
 
 }
+var bandera;
+
+
+function dibujar(event) {
+    var canvas=document.getElementById("canvas");
+    var contexto=canvas.getContext("2d");
+
+    var x=event.clientX;
+    var y=event.clientY;
+    console.log(x,y);
+    canvas.onmousedown=function () {bandera=true};
+    canvas.onmouseup=function () {bandera=false};
+    if(bandera){
+        contexto.fillRect(x,y,5,5);
+        contexto.fill;
+    }
+
+}
+function limpiar() {
+    var canvas=document.getElementById("canvas");
+    var contexto=canvas.getContext("2d");
+    canvas.width= canvas.width;
+
+}
