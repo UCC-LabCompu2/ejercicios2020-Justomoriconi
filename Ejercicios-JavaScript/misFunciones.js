@@ -147,3 +147,39 @@ function limpiar() {
     canvas.width= canvas.width;
 
 }
+
+function cuadriculado() {
+    var canvas=document.getElementById("myCanvas");
+    var contexto=canvas.getContext("2d");
+    var alto=canvas.height;
+    var ancho=canvas.width;
+    contexto.beginPath();
+    for (var i=0;i<alto;) {
+        contexto.moveTo(0, i);
+        contexto.lineTo(ancho, i);
+        contexto.strokeStyle = "#000000";
+        contexto.stroke();
+        i = i + 20;
+    }
+    contexto.closePath();
+    contexto.beginPath();
+    for (var i=0;i<ancho;) {
+        contexto.moveTo(i, 0);
+        contexto.lineTo(i, alto);
+        contexto.strokeStyle = "rgb(0,0,0)";
+        contexto.stroke();
+        i = i + 20;
+    }
+    contexto.closePath();
+    contexto.beginPath();
+    contexto.moveTo(0,alto/2);
+    contexto.lineTo(ancho,alto/2);
+    contexto.strokeStyle = "#ff0000";
+    contexto.stroke();
+    contexto.closePath();
+    contexto.beginPath();
+    contexto.moveTo(ancho/2,0);
+    contexto.lineTo(ancho/2,alto);
+    contexto.strokeStyle = "#ff0000";
+    contexto.stroke();
+}
