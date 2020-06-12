@@ -183,3 +183,14 @@ function cuadriculado() {
     contexto.strokeStyle = "#ff0000";
     contexto.stroke();
 }
+function dibujarimagen(px, py) {
+    var canvas=document.getElementById("myCanvas");
+    var contexto=canvas.getContext("2d");
+    console.log(px,py);
+    var  img=new Image();
+    img.src="images/auto.png";
+    canvas.width=canvas.width;
+    img.onload=function() {
+        contexto.drawImage(img,px, py);
+    }
+}
