@@ -194,3 +194,20 @@ function dibujarimagen(px, py) {
         contexto.drawImage(img,px, py);
     }
 }
+x=0;
+dx=2;
+function animarauto() {
+    var canvas=document.getElementById("myCanvas");
+    var contexto=canvas.getContext("2d");
+    canvas.width=canvas.width;
+    var  img=new Image();
+    img.src="images/auto.png";
+    img.onload=function() {
+        contexto.drawImage(img,x, 100);
+    }
+    if(x>canvas.width){
+        x=0;
+    }
+    x+=dx;
+
+}
