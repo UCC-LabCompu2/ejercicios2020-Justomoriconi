@@ -194,6 +194,7 @@ function dibujarimagen(px, py) {
         contexto.drawImage(img,px, py);
     }
 }
+
 x=0;
 dx=2;
 function animarauto() {
